@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BudgetApp</title>
+    <title>Coin App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= favicon_link_tag asset_path('coin.png') %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "app" %>
     <%= javascript_importmap_tags %>
+    <script src="https://kit.fontawesome.com/1097d30f85.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
+
+  <div data-controller="toggle">
+
+  <% render "helper/navbar" %>
+  <p class="notices" data-toggle-target="notice" id="notice" data-toggle-notice-value="<%= flashes! %>" > <%= flashes! %></p>
+<div class="view" data-toggle-target="view">
     <%= yield %>
+</div>
+</div>
   </body>
 </html>
