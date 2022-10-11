@@ -1,0 +1,28 @@
+<% if can? :read, Group %>
+<div class="">
+<div class="">
+<h2 class="">Groups</h2>
+</div>
+
+<div class="list" id="groups">
+<% @groups.each do |group| %>
+<p>
+  <%= link_to group_operations_path(group.id) do %>
+    <%= render group %>
+  <% end %>
+</p>
+<% end %>
+
+<% if @groups.empty? %>
+<%= render "helper/nothing", message: "group" %>
+<% end %>
+
+</div>
+
+<% if can? :message, Group %>
+<div class="">
+<%= link_to "New", new_group_path %>
+</div>
+<% end %>
+</div>
+<% end %>

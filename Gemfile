@@ -6,6 +6,12 @@ ruby '3.1.2'
 #  Linter for Rails
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+#  Add devise gem
+gem 'devise'
+
+#  Add cancancan gem
+gem 'cancancan'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
 
@@ -29,10 +35,11 @@ gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
-
+gem 'validate_url'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
-
+gem 'faraday'
+gem 'httparty'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
