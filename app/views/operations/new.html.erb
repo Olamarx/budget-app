@@ -1,10 +1,10 @@
+  <%= link_to :back, class: "btn btn-primary" do %>Previous Page<% end %>
 
-<div class="">
-  <div class="">
-  <%= link_to :back do %> < Cancel <% end %>
-<h1 class="">New operation</h1> 
-  </div>
-  <div class="">
-    <%= render "form", operation: @operation %>
+<div class="main-body">
+  
+<h2 class="main-h">New operation</h2> 
+
+  <div>
+    <%= render "operations/form", operation: @operation %>
   </div>
 </div>
