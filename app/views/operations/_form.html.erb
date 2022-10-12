@@ -1,18 +1,18 @@
 <%= form_with(model: operation) do |form| %>
-  <div>
+  <div class="form">
     <%= form.text_field :name, placeholder: :name %>
   </div>
 
-  <div>
+  <div class="form">
     <%= form.text_field :amount, placeholder: :amount %>
   </div>
 
   <div>
-    <%= form.label :groups %>
+    <%= form.label :groups %>:
     <%= form.collection_check_boxes(:group_ids, @client.groups, :id, :name) %>
   </div>
 
   <div>
-    <%= form.submit 'Save' %>
+    <%= form.submit 'Save', class: "btn btn-primary"  %>
   </div>
 <% end %>

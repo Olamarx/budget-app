@@ -1,22 +1,10 @@
 <% if user_signed_in? %>
 
 <div class="nav">
+    <%= image_tag("coin.png", alt: 'Coin', class: "menu-ico") %>
 
-<button data-action="click->toggle#menu" type="button" aria-label="Menu" aria-controls="navigation">
-    <div data-toggle-target="burger">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-    
-    <div data-toggle-target="close" class="hidden">
-        <i class="fa-solid fa-xmark"></i>
-    </div>
-</button>
-
-<%= image_tag("coin.png", alt: 'Coin', class: "menu-ico") %>
-</div>
-
-<div data-toggle-target="menu" class="menu">
-<div class="menu-options">
+<div class="link-btn">
+<%= button_to 'Logout', destroy_user_session_path, method: :delete, data: { turbo: false, action: 'click->toggle#menu' } %>
 <%= link_to 'Home', root_path, method: :get %>
 
 <% if can? :manage, Group %>
@@ -27,10 +15,9 @@
 <%= link_to 'New Operation', new_operation_path, method: :get %>
 <% end %>
 
-<%= button_to 'Logout', destroy_user_session_path, method: :delete, data: { turbo: false, action: 'click->toggle#menu' } %>
 </div>
 
 <%= image_tag("coin.png", alt: 'Coin', class: "menu-ico") %>
-</div>
 
+</div>
 <% end %>

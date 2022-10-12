@@ -1,16 +1,16 @@
 <% if can? :read, Group %>
-<div class="">
-<div class="">
-<h2 class="">Groups</h2>
+<div>
+<div>
+<h2>Groups</h2>
 </div>
 
 <div class="list" id="groups">
 <% @groups.each do |group| %>
-<p>
+<div class="img-for-all">
   <%= link_to group_operations_path(group.id) do %>
     <%= render group %>
   <% end %>
-</p>
+</div>
 <% end %>
 
 <% if @groups.empty? %>
@@ -20,8 +20,8 @@
 </div>
 
 <% if can? :message, Group %>
-<div class="">
-<%= link_to "New", new_group_path %>
+<div>
+<%= link_to "New", new_group_path, class: "button-new" %>
 </div>
 <% end %>
 </div>

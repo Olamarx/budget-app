@@ -1,19 +1,22 @@
 <% if can? :read, Operation %>  
+      <%= link_to root_path, class: "btn btn-primary" do %> Previous Page <% end %>
   
-<div class="">
-<div class="">
-      <%= link_to root_path do %> < Back <% end %>
+<div class="main-body">
+<div>
 
-      <h1 class="">
+      <h2 class="main-h2">
       <%= @group.name %>
-      </h1>
+      </h2>
 
-      <div>
-      Total: $ <%= @group.total %>
+      <div class="total">
+      Total: 
+      <strong>
+      $<%= @group.total %>
+      </strong>
       </div>
 </div>
 
-<div class="" id="operations">
+<div id="operations">
   <% @operations.each do |operation| %>
     <%= render operation %>
   <% end %>
@@ -26,9 +29,9 @@
 
 </div>
   <% if  can? :manage, Operation %>
-    <div>
-      <%= link_to "Add New", new_operation_path %>
-    </div>
     <% end %>
 </div>
+    <div class="button-view">
+      <%= link_to "Add New", new_operation_path, class: "button-new" %>
+    </div>
     <% end %>

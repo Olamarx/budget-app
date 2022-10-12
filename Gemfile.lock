@@ -74,6 +74,8 @@ GEM
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bullet (4.6.0)
+      uniform_notifier
     cancancan (3.4.0)
     capybara (3.37.1)
       addressable
@@ -96,6 +98,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubi (1.11.0)
     faraday (2.6.0)
       faraday-net_http (>= 2.0, < 3.1)
@@ -231,6 +237,7 @@ GEM
     tzinfo-data (1.2022.4)
       tzinfo (>= 1.0.0)
     unicode-display_width (2.3.0)
+    uniform_notifier (1.16.0)
     validate_url (1.0.15)
       activemodel (>= 3.0.0)
       public_suffix
@@ -258,10 +265,12 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bullet
   cancancan
   capybara
   debug
   devise
+  dotenv-rails
   faraday
   httparty
   importmap-rails
