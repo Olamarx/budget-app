@@ -81,5 +81,4 @@ group :test do
   gem 'webdrivers'
 end
 
-	
 gem 'bullet', group: 'development'
