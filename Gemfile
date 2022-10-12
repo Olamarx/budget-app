@@ -6,6 +6,8 @@ ruby '3.1.2'
 #  Linter for Rails
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'jbuilder'
+gem 'validate_url'
 #  Add devise gem
 gem 'devise'
 
@@ -34,8 +36,6 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem 'jbuilder'
-gem 'validate_url'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 gem 'faraday'
@@ -82,4 +82,4 @@ group :test do
 end
 
 	
-gem 'bullet', '4.6.0', :group => 'development'
+gem 'bullet', group: 'development'
