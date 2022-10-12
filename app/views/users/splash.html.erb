@@ -1,12 +1,12 @@
 <div class="main-body">
 <div class="home">
-<%= image_tag("https://media4.giphy.com/media/3o6fIVWkDCb89PauSQ/giphy.gif", :alt => "app logo", class: "logo") %>
 <h2>
 Coin Tracker
 </h2>
+<%= image_tag("https://media4.giphy.com/media/3o6fIVWkDCb89PauSQ/giphy.gif", :alt => "app logo", class: "logo") %>
 </div>
 
-<div>
+<div class="buttons">
 <%= button_to 'Log in', new_user_session_path, method: :get, class: "login" %>
 <%= button_to 'Sign Up', new_user_registration_path, method: :get, class: "sign-up" %>
 </div>
