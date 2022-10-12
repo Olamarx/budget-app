@@ -265,7 +265,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  bullet
+  bullet (= 4.6.0)
   cancancan
   capybara
   debug
