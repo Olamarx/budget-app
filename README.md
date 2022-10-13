@@ -14,8 +14,6 @@
 🔷 rspec/rails & capybara
 ## Live Demo
 
-Yet to be
-
 ### Tools
 
 💠VISUAL STUDIO CODE
