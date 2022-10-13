@@ -15,7 +15,7 @@
 ## Live Demo
 
 ### Tools
-
+💠 PostgreSQL: PG Admin or command prompt
 💠VISUAL STUDIO CODE
 
 ## Getting Started
