@@ -6,12 +6,12 @@
 
 ## Built With
 
-🔷 Ruby on Rails
-🔷 devise && cancancan
-🔷 PostgreSQL
-🔷 bullet
-🔷 bootstrap && css
-🔷 rspec/rails & capybara
+- Ruby on Rails
+- devise && cancancan
+- PostgreSQL
+- bullet
+- bootstrap && css
+- rspec/rails & capybara
 ## Live Demo
 
 ### Tools
