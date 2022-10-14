@@ -96,5 +96,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Thank You goes to [Gregoire Vella](https://www.behance.net/gregoirevella) on [Behance](https://www.behance.net/) for this beautiful [Snapscan - iOs design and branding](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding) template.
-- Thanks to my good friend, Daniel Malo for standing by always.
-- Thanks to one of my motivators and helper, Agudelo Andres for standing by always.
+<!-- - Thanks to my good friend, Daniel Malo for standing by always.
+- Thanks to one of my motivators and helper, Agudelo Andres for standing by always. -->
