@@ -1,0 +1,13 @@
+<%= form_with(model: group) do |form| %>
+  <div>
+    <%= form.text_field :name, placeholder: :name %>
+  </div>
+
+  <div>
+    <%= form.text_field :icon, placeholder: :icon %>
+  </div>
+
+  <div>
+    <%= form.submit 'Save', class: "btn btn-primary" %>
+  </div>
+<% end %>

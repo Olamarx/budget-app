@@ -1,0 +1,28 @@
+    <%= link_to get_started_path, class: "btn btn-primary" do %>Previous Page<% end %>
+<div class="main-body">
+  <div>
+    <h2 class="main-h2">Register</h2>
+  </div>
+  <div class="form-body">
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), data: { turbo: false }) do |f| %>
+      <div class= "form">
+        <%= f.text_field :name, placeholder: "Name (Minimum of Five Letters)", autofocus: true, autocomplete: "name" %>
+      </div>
+      <div class= "form">
+        <%= f.email_field :email, placeholder: :email, autocomplete: "email" %>
+      </div>
+      <div class= "form">
+        <%= f.password_field :password, placeholder: "Password (#{@minimum_password_length}+ characters)", autocomplete: "new-password" %>
+      </div>
+      <div class= "form">
+        <%= f.password_field :password_confirmation, placeholder: :password_confirmation, autocomplete: "new-password" %>
+      </div>
+      <div>
+        <%= f.submit "Sign up", class: "btn btn-primary mar" %>
+      </div>
+      <div class="other-actions button-alt">
+        <%= render "devise/shared/links" %>
+      </div>
+    <% end %>
+  </div>
+</div>

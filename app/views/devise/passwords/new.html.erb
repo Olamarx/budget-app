@@ -1,0 +1,20 @@
+    <%= link_to get_started_path, class: "btn btn-primary" do %> Previous Page <% end %>
+<div class="main-body">
+  <div class="form-top">
+    <h2 class="main-h">Forgot your password?</h2>
+  </div>
+  <div>
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }, data: { turbo: false }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+      <div class="form">
+        <%= f.email_field :email, placeholder: :email, autofocus: true, autocomplete: "email" %>
+      </div>
+      <div>
+        <%= f.submit "Send me reset password instructions", class: "btn btn-primary" %>
+      </div>
+      <div class="other-actions">
+        <%= render "devise/shared/links" %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div id="<%= dom_id group %>">
+
+  <div  class="main-group">
+  <div>
+    <%= image_tag group.icon, class: "img" %>
+  </div>
+
+  <div>
+    <span>
+    <%= group.name %>
+    </span>
+  </div>
+
+  <div>
+      <small>
+        <%= group.updated_at.to_date %>
+      </small>
+  </div>
+
+      <span>
+        $<%= group.total %>
+      </span>
+  </div>
+</div>
